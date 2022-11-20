@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BullAndCows</string>
+    <string name="game_screen_title">GAME</string>
+    <string name="cows_and_bulls">Cows And Bulls</string>
+    <string name="guess">Guess</string>
+    <string name="what_number_do_you_think_it_is">what number do you think it is?</string>
+</resources>
