@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/numberTextBlock"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text="@string/numberWithTwoDots" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:height="5dp"
+            android:text=" N" />
+
+        <TextView
+            android:id="@+id/separator1"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text=";" />
+
+        <TextView
+            android:id="@+id/cowsTextBlock"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text="Cows:" />
+
+        <TextView
+            android:id="@+id/cowsNumber"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text="N" />
+
+        <TextView
+            android:id="@+id/separator2"
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text=";" />
+
+        <TextView
+            android:id="@+id/bullsTextBlock"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text=" Bulls:" />
+
+        <TextView
+            android:id="@+id/bullsNumber"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text=" N " />
+
+        <TextView
+            android:id="@+id/separator3"
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:height="50dp"
+            android:text=";" />
+    </LinearLayout>
+
+</RelativeLayout>

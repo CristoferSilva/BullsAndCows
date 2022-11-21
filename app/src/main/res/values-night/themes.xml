@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.BullAndCows" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/arcade</item>
         <item name="colorPrimaryVariant">@color/arcade</item>
         <item name="colorOnPrimary">@color/arcade</item>
         <!-- Secondary brand color. -->
@@ -15,5 +15,7 @@
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
-
+    <style name="MainScreenTitleStyle">
+        <item name="android:textColor">@color/lightBrown</item>
+    </style>
 </resources>
