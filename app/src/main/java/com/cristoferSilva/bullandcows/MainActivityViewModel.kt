@@ -6,6 +6,7 @@ import kotlin.random.Random
 class MainActivityViewModel : ViewModel() {
     private var inputGuess: String = "";
     private var randomNumber: String = " ";
+    private var inputPersonName: String = " ";
 
     fun sendGuess(): Boolean {
         if(inputGuess.equals(randomNumber))
@@ -16,6 +17,12 @@ class MainActivityViewModel : ViewModel() {
     fun setInputGuess(guess: String) {
         inputGuess = guess;
     }
+
+    fun setInputPersonName(personName: String){
+        inputPersonName = personName;
+    }
+
+    fun getInputPersonName() : String = inputPersonName
 
     fun getInputGuess(): String = inputGuess
 
