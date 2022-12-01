@@ -1,5 +1,6 @@
 package com.cristoferSilva.bullandcows
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -30,7 +31,8 @@ class InitialViewActivity : AppCompatActivity() {
             }
         });
         binding.playButton.setOnClickListener(){
-            //val navigateToActivityMain = Intent(MainActivity)
+            val navigateToActivityMain = Intent(this,MainActivity::class.java)
+            startActivity(navigateToActivityMain)
             //bindingInitialView.playProgressBar.visibility = setVisible()
         }
     }
