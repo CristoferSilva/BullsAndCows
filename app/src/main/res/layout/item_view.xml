@@ -2,11 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp">
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
 
         <TextView
             android:id="@+id/numberTextBlock"
@@ -17,7 +23,7 @@
 
         <TextView
             android:id="@+id/number"
-            android:layout_width="25dp"
+            android:layout_width="50dp"
             android:layout_height="20dp"
             android:height="5dp"
             android:text=" N" />
@@ -38,7 +44,7 @@
 
         <TextView
             android:id="@+id/cowsNumber"
-            android:layout_width="25dp"
+            android:layout_width="50dp"
             android:layout_height="20dp"
             android:height="50dp"
             android:text="N" />
@@ -59,7 +65,7 @@
 
         <TextView
             android:id="@+id/bullsNumber"
-            android:layout_width="25dp"
+            android:layout_width="50dp"
             android:layout_height="20dp"
             android:height="50dp"
             android:text=" N " />
