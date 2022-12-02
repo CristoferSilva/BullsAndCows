@@ -1,16 +1,26 @@
 package com.cristoferSilva.bullandcows.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
 import com.cristoferSilva.bullandcows.R
+import kotlinx.android.synthetic.main.fragment_about_cristofer.*
 
 class AboutCristoferFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        btn_linkedin.setOnClickListener {
+//            val openURL = Intent(Intent.activi)
+//            openURL.data = Uri.parse("https://www.linkedin.com/in/cristofer-silva-099b43215/")
+//            startActivity(openURL)
+//        }
     }
 
     override fun onCreateView(

@@ -35,5 +35,9 @@ class InitialViewActivity : AppCompatActivity() {
             startActivity(navigateToActivityMain)
             //bindingInitialView.playProgressBar.visibility = setVisible()
         }
+        binding.buttonAbout.setOnClickListener(){
+            val navigateToActivityMain = Intent(this,AboutActivity::class.java)
+            startActivity(navigateToActivityMain)
+        }
     }
 }

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
 import com.cristoferSilva.bullandcows.R
 
 class HomeAboutFragment : Fragment() {
@@ -18,6 +20,13 @@ class HomeAboutFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_about, container, false)
+        val view =  inflater.inflate(R.layout.fragment_home_about, container, false)
+        view.findViewById<Button>(R.id.button_about_cristofer).setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_homeAboutFragment_to_aboutCristoferFragment)
+        }
+        view.findViewById<Button>(R.id.button_about_matheus).setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_homeAboutFragment_to_aboutMatheusFragment)
+        }
+        return view
     }
 }

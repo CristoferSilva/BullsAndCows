@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeAboutFragment">
+
+    <fragment
+        android:id="@+id/homeAboutFragment"
+        android:name="com.cristoferSilva.bullandcows.fragments.HomeAboutFragment"
+        android:label="fragment_home_about"
+        tools:layout="@layout/fragment_home_about" >
+        <action
+            android:id="@+id/action_homeAboutFragment_to_aboutCristoferFragment"
+            app:destination="@id/aboutCristoferFragment" />
+        <action
+            android:id="@+id/action_homeAboutFragment_to_aboutMatheusFragment"
+            app:destination="@id/aboutMatheusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutCristoferFragment"
+        android:name="com.cristoferSilva.bullandcows.fragments.AboutCristoferFragment"
+        android:label="fragment_about_cristofer"
+        tools:layout="@layout/fragment_about_cristofer" >
+        <action
+            android:id="@+id/action_aboutCristoferFragment_to_homeAboutFragment"
+            app:destination="@id/homeAboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutMatheusFragment"
+        android:name="com.cristoferSilva.bullandcows.fragments.AboutMatheusFragment"
+        android:label="fragment_about_matheus"
+        tools:layout="@layout/fragment_about_matheus" >
+        <action
+            android:id="@+id/action_aboutMatheusFragment_to_homeAboutFragment"
+            app:destination="@id/homeAboutFragment" />
+    </fragment>
+</navigation>

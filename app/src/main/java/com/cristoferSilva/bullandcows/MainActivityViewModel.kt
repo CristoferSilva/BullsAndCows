@@ -1,14 +1,39 @@
 package com.cristoferSilva.bullandcows
 
 import androidx.lifecycle.ViewModel
+import com.cristoferSilva.bullandcows.model.Score
 import kotlin.random.Random
 
 class MainActivityViewModel : ViewModel() {
     private var inputGuess: String = "";
     private var randomNumber: String = " ";
-    private var inputPersonName: String = " ";
+    companion object{
+        private var inputPersonName: String = " ";
+    }
 
-    fun sendGuess(): Boolean {
+    fun sendGuess(scoreList: MutableList<Score>): Boolean {
+        var score = Score()
+        score.bullsNumber = 0
+        score.cowsNumber = 0
+        var bull = 0
+        var cows = 0
+
+        for (i in 0 until 4) {
+            for (j in 0 until 4) {
+                if (i === j && inputGuess[i] === randomNumber[j]) {
+                    bull++
+                    score.bullsNumber = bull
+                }
+                if (i !== j && inputGuess[i] === randomNumber[j]) {
+                    cows++
+                    score.cowsNumber = cows
+                }
+            }
+        }
+        score.guessNumber = inputGuess.toInt()
+
+        scoreList.add(score)
+
         if(inputGuess.equals(randomNumber))
             return true;
         return false
@@ -35,7 +60,7 @@ class MainActivityViewModel : ViewModel() {
         randomNumber = number.toString();
     }
 
-    private fun areNumbersDifferent(stringNumber: String): Boolean {
+    public fun areNumbersDifferent(stringNumber: String): Boolean {
         var i = 0;
         var j = 0;
 
@@ -59,5 +84,9 @@ class MainActivityViewModel : ViewModel() {
            i++;
        }
         return true;
+    }
+
+    fun getRandomNumber(): Int {
+        return randomNumber.toInt()
     }
 }
