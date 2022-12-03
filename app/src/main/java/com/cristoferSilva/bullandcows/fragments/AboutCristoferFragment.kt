@@ -16,18 +16,20 @@ class AboutCristoferFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        btn_linkedin.setOnClickListener {
-//            val openURL = Intent(Intent.activi)
-//            openURL.data = Uri.parse("https://www.linkedin.com/in/cristofer-silva-099b43215/")
-//            startActivity(openURL)
-//        }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val aboutFragment = inflater.inflate(R.layout.fragment_about_cristofer, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about_cristofer, container, false)
+        val buttonLinkedin = aboutFragment.findViewById<View>(R.id.btn_linkedin_cristofer)
+
+        buttonLinkedin.setOnClickListener(){
+            startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/cristofer-silva-099b43215")))
+        }
+        // Inflate the layout for this fragment
+        return aboutFragment
     }
 }
